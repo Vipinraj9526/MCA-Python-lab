@@ -1,6 +1,13 @@
-# Store a list of first names . Count the occurance of 'a' within the list
-
-limit = int(input("Enter a limit:"))
-firstName = [input("Enter the name:") for i in range(limit)]
-for i in firstName:
-    print("no of occurance of a in", i, "is", i.lower().count('a'))
+#6 Store a list of first names. Count the occurrences of ‘a’ within the list
+ 
+li=[]
+c=0
+n=int(input("Enter no.of names:"))
+for x in range (n):
+   name=input("enter first names:")
+   li.append(name)
+for x in li:
+   for y in x:
+     if 'a' in y:
+       c=c+1
+print("number of 'a' is:",c)
