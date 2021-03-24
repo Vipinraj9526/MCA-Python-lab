@@ -1,6 +1,11 @@
-# Count the occurance of each word in a line of text
-
-text="java language is a simple and powerfull programming language "
-for i in text.strip().split():
-    print("Number of occurence of word ","\"",i,"\""," is :",text.strip().split().count(i))
-
+#4.Count the occurence of each word in a line of text.
+a=str(input("Enter the words:"))
+cd=dict()
+words=a.split()
+print(words)
+for x in words:
+  if x in cd:
+    cd[x]=cd[x]+1
+  else:
+    cd[x]=1
+print(cd)
