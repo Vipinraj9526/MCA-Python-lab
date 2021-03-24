@@ -1,7 +1,7 @@
-# Display future leap year from current year to a finel year entered by user
+#2.Display future leap year from current year to a final year entered by user
 
-currentYear = 2020
-futureYear = int(input("Enter a future year:"))
-for i in range(currentYear, futureYear + 1):
-    if i % 4 == 0 and i % 100 != 0 or i % 400 == 0:
-        print(i)
+y1=int(input("Enter the current year:"))
+y2=int(input("Enter the last year:"))
+for x in range(y1,y2+1):
+   if x%4==0 and x%100!=0 or x%400==0:
+      print(x)
