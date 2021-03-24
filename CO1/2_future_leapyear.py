@@ -1,4 +1,4 @@
-#2.Display future leap year from current year to a final year entered by user
+#2.Display future leap year from current year to a final year entered by user.
 
 y1=int(input("Enter the current year:"))
 y2=int(input("Enter the last year:"))
